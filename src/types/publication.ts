@@ -1,6 +1,4 @@
 export type Publication = {
-    title: string;
-    authors: string[];
-    publisher: string;
+    citation: string;
     url: string;
 }
