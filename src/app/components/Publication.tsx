@@ -13,11 +13,11 @@ const Publications = () => {
         </h2>
       </div>
 
-      <div className="space-y-10">
-        {publications.map((publication) => (
-          <PublicationCard key={publication.url} publication={publication} />
+      <div className="divide-y divide-[var(--neutral)]/20">
+        {publications.map((publication, index) => (
+          <PublicationCard key={index} publication={publication} />
         ))}
-      </div>
+      </div> 
     </section>
   );
 };
@@ -26,7 +26,7 @@ const PublicationCard = ({ publication }: { publication: Publication }) => {
   const doi = publication.url.replace("https://", "");
 
   return (
-    <article className="flex items-start gap-3">
+    <article className="flex items-start gap-3 py-6 first:pt-0 last:pb-0">
       <TiDocumentText className="mt-0.5 shrink-0 text-3xl text-[var(--neutral)]" />
 
       <div>
