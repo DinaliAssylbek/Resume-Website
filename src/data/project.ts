@@ -16,5 +16,6 @@ export const projects: Project[] = [
     date: "APR 2026",
     skills: ["C", "STM32", "Cortex-M3", "Assembly"],
     link: "https://github.com/DinaliAssylbek/Simple_RTOS",
+    imagePath: "/RTOS.jpeg"
   }
 ];
