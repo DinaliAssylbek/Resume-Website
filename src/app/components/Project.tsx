@@ -19,13 +19,14 @@ const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <article className="border border-[var(--neutral)]/20 shadow-sm">
       {project.imagePath && (
-        <Image
-          src={project.imagePath}
-          alt={project.title}
-          width={300}
-          height={300}
-          className="w-full object-cover"
-        />
+        <div className="relative w-full h-64 overflow-hidden">
+            <Image
+                src={project.imagePath}
+                alt={project.title}
+                fill
+                className="object-cover"
+            />
+        </div>
       )}
       <div className="p-6">
         <div className="mb-4 flex items-start justify-between gap-4">
