@@ -9,7 +9,13 @@ export default function Home() {
   return (
     <>
       <main className="px-8" style={{backgroundColor: "#f8f9ff"}}>
-        <TechnicalSkills></TechnicalSkills>
+        <div className="mb-15 flex">
+          <div className="flex-2">
+          </div>
+          <div className="flex-1">
+            <TechnicalSkills />
+          </div>
+        </div>
         <Project></Project>
         <div className="mb-15 flex">
           <div className="flex-1">
