@@ -17,5 +17,12 @@ export const projects: Project[] = [
     skills: ["C", "STM32", "Cortex-M3", "Assembly"],
     link: "https://github.com/DinaliAssylbek/Simple_RTOS",
     imagePath: "/RTOS.jpeg"
+  },
+  {
+    title: "Wearable Navigation System - UVU Hackathon - 1st Place",
+    description: "Built a wearable obstacle-aware navigation system during a 24-hour hackathon using Raspberry Pi/Linux, integrating a rotating ultrasonic sensor for environmental scanning and Bluetooth audio feedback to headphones for real-time navigation assistance.",
+    date: "MAR 2024",
+    skills: ["Linux", "Python", "Raspberry Pi", "Sensors"],
+    imagePath: "/Hackathon.jpeg"
   }
 ];
