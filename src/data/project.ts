@@ -40,5 +40,12 @@ export const projects: Project[] = [
     date: "JUL 2026",
     skills: ["Next.js", "Typescript", "React"],
     link: "https://github.com/DinaliAssylbek/Resume-Website"
+  },
+  {
+    title: "Ring Rise Smart Ring",
+    description:   "Engineered Ring Rise, a wearable embedded system featuring a custom PCB, STM32 microcontroller, I²C-based biometric sensors, and vibration motor control. Developed embedded C firmware for real-time sensor acquisition, alarm scheduling, and health monitoring to support sleep tracking and smart wake-up functionality, winning the Get Seeded competition.",
+    date: "SEP 2023",
+    skills: ["C", "STM32", "Embedded Systems", "PCB Design", "I²C", "Firmware Development"],
+    imagePath: "/RingRise.jpeg"
   }
 ];
