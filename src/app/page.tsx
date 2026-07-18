@@ -4,13 +4,15 @@ import Publications from "./components/Publication";
 import Project from "./components/Project"
 import Footer from "./components/Footer"
 import TechnicalSkills from "./components/TechnicalSkills";
+import Experience from "./components/Experience";
 
 export default function Home() {
   return (
     <>
       <main style={{backgroundColor: "#f8f9ff"}}>
-        <div className="mb-15 flex">
+        <div className="my-15 flex">
           <div className="flex-2">
+            <Experience />
           </div>
           <div className="flex-1">
             <TechnicalSkills />
