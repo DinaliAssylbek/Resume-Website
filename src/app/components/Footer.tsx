@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const links = [
   {
     label: "LinkedIn",
@@ -20,9 +22,17 @@ const Footer = () => {
         <h2 className="mb-3 text-2xl font-bold text-[var(--primary)]">
           Dinali Assylbek
         </h2>
-        <p className="text-[var(--neutral)]">
-          Made with React & Next.js. Almaty, Kazakhstan
-        </p>
+        <div className="flex gap-1">
+          <p className="text-[var(--neutral)]">
+            Made with React & Next.js. Almaty, Kazakhstan
+          </p>
+          <Image
+            src="/Kazakhstan.png"
+            alt="Kazakhstan"
+            width={24}
+            height={24}
+          />
+        </div>
       </div>
 
       <nav className="flex flex-wrap gap-5" aria-label="Social links">
