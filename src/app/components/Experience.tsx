@@ -13,7 +13,7 @@ const Experience = () => {
                 Experience
             </h1>
         </div>
-        <div>
+        <div className='space-y-10'>
             {experiences.map((experience, index) => (
                 <ExperienceCard key={index} entry={experience}/>
             ))}
@@ -24,19 +24,34 @@ const Experience = () => {
 
 const ExperienceCard  = ({ entry }: { entry: ExperienceEntry }) => {
   return (
-    <article>
-        <div className='flex justify-between'>
-            <div>
-                <h3 className='font-bold text-lg text-[var(--primary)]'>
-                    {entry.company}
-                </h3>
-                <p className='text-lg text-[var(--secondary)] italic'>
-                    {entry.title}
+    <article className="flex gap-4">
+        <div className="flex w-3 shrink-0 flex-col items-center self-stretch">
+            <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-[var(--secondary)]" />
+            <span className="mt-2 w-px flex-1 bg-[var(--neutral)]/40" />
+        </div>
+
+        <div className="min-w-0 flex-1">
+            <div className='flex justify-between'>
+                <div>
+                    <h3 className='font-bold text-lg text-[var(--primary)]'>
+                        {entry.company}
+                    </h3>
+                    <p className='text-lg text-[var(--secondary)] italic'>
+                        {entry.title}
+                    </p>
+                </div>
+                <p className='text-[var(--neutral)] text-lg'>
+                    {entry.from} - {entry.to}
                 </p>
             </div>
-            <p className='text-[var(--neutral)] text-lg'>
-                {entry.from} - {entry.to}
-            </p>
+            {entry.info.map((point, key) => (
+                <div key={key} className="flex items-start gap-3 my-3">
+                    <p>//</p>
+                    <p className="text-base text-[var(--neutral)]">
+                        {point}
+                    </p>
+                </div>
+            ))}
         </div>
     </article>
   )
