@@ -17,7 +17,7 @@ export default function Home() {
           </div>
         </div>
         <Project></Project>
-        <div className="mb-15 flex">
+        <div className="mb-10 flex">
           <div className="flex-1">
             <Education />
           </div>
