@@ -6,6 +6,11 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 
 
 const Projects = () => {
+
+  const leftColumn = projects.filter((_, index) => index % 3 === 0);
+  const middleColumn = projects.filter((_, index) => index % 3 === 1);
+  const rightColumn = projects.filter((_, index) => index % 3 === 2);
+
   return (
     <section className="px-28 py-12" style={{backgroundColor: "#f4f6ff"}}>
       <div className="flex">
@@ -14,10 +19,22 @@ const Projects = () => {
           Featured Projects
         </h1>
       </div>
-      <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-2 xl:grid-cols-3">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
-        ))}
+      <div className="grid grid-cols-1 items-start gap-x-8 md:grid-cols-2 xl:grid-cols-3">
+        <div>
+           {leftColumn.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
+        <div>
+           {middleColumn.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
+        <div>
+           {rightColumn.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -25,7 +42,7 @@ const Projects = () => {
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <article className="border border-[var(--neutral)]/20 shadow-sm">
+    <article className="border border-[var(--neutral)]/20 shadow-sm mb-8">
       {project.imagePath && (
         <div className="relative w-full h-64 overflow-hidden">
             <Image
