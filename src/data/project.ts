@@ -26,6 +26,14 @@ export const projects: Project[] = [
     imagePath: "/Hackathon.jpeg"
   },
   {
+    title: "FPGA Pong Game",
+    description: "Designed a custom CPU in Verilog implementing a custom instruction set architecture (ISA), developed VGA display and input controller modules, created a compiler to translate code into instruction set, and executed a Pong game entirely on FPGA hardware using synchronous digital logic and finite state machines.",
+    date: "MAY 2024",
+    skills: ["Verilog", "Assembly", "CPU Architecture", "DE1-SoC", "ModelSim", "Python"],
+    link: "https://github.com/DinaliAssylbek/Pong-FPGA",
+    imagePath: "/PongFPGA.png"
+  },
+  {
     title: "This Website",
     description:
       "Built a responsive portfolio website with Next.js, React, and TypeScript, using reusable components and structured data to showcase projects, technical skills, education, publications, and detailed project reports.",
