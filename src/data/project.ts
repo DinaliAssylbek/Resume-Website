@@ -24,5 +24,13 @@ export const projects: Project[] = [
     date: "MAR 2024",
     skills: ["Linux", "Python", "Raspberry Pi", "Sensors"],
     imagePath: "/Hackathon.jpeg"
+  },
+  {
+    title: "This Website",
+    description:
+      "Built a responsive portfolio website with Next.js, React, and TypeScript, using reusable components and structured data to showcase projects, technical skills, education, publications, and detailed project reports.",
+    date: "JUL 2026",
+    skills: ["Next.js", "Typescript", "React"],
+    link: "https://github.com/DinaliAssylbek/Resume-Website"
   }
 ];
