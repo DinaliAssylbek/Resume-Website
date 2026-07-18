@@ -13,11 +13,16 @@ const Projects = () => {
 
   return (
     <section className="px-28 py-12" style={{backgroundColor: "#f4f6ff"}}>
-      <div className="flex">
-        <HiOutlineDesktopComputer className="text-3xl mr-3 text-[var(--secondary)]"/>
-        <h1 className="font-bold text-2xl text-[var(--primary)] mb-7">
-          Featured Projects
-        </h1>
+      <div className="flex justify-between">
+        <div className="flex">
+          <HiOutlineDesktopComputer className="text-3xl mr-3 text-[var(--secondary)]"/>
+          <h1 className="font-bold text-2xl text-[var(--primary)] mb-7">
+            Featured Projects
+          </h1>
+        </div>
+        <h2 className="text-xl text-[var(--secondary)]" style={{ fontFamily: "var(--font-label)" }}>
+          / {projects.length} Projects
+        </h2>
       </div>
       <div className="grid grid-cols-1 items-start gap-x-8 md:grid-cols-2 xl:grid-cols-3">
         <div>
