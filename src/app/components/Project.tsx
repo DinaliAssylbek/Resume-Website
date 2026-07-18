@@ -20,8 +20,8 @@ const Projects = () => {
             Featured Projects
           </h1>
         </div>
-        <h2 className="text-xl text-[var(--secondary)]" style={{ fontFamily: "var(--font-label)" }}>
-          / {projects.length} Projects
+        <h2 className="text-l text-[var(--secondary)]" style={{ fontFamily: "var(--font-label)" }}>
+          / {projects.length} TOTAL PROJECTS
         </h2>
       </div>
       <div className="grid grid-cols-1 items-start gap-x-8 md:grid-cols-2 xl:grid-cols-3">
