@@ -5,7 +5,7 @@ import type { Education as EducationEntry } from "@/types/education";
 
 const Education = () => {
   return (
-    <section className="py-12 ml-20 mr-10">
+    <section className="py-12 ml-28 mr-10">
       <div className="mb-12 flex items-center gap-4">
         <RiGraduationCapLine className="text-3xl text-[var(--secondary)]" />
         <h2 className="text-xl font-bold text-[var(--primary)]">Education</h2>

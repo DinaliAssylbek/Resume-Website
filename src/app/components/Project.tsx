@@ -2,10 +2,18 @@ import { FiExternalLink } from "react-icons/fi";
 import { projects } from "@/data/project";
 import type { Project } from "@/types/project";
 import Image from "next/image";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+
 
 const Projects = () => {
   return (
-    <section className="mx-20 py-12">
+    <section className="px-28 py-12" style={{backgroundColor: "#f4f6ff"}}>
+      <div className="flex">
+        <HiOutlineDesktopComputer className="text-3xl mr-3 text-[var(--secondary)]"/>
+        <h1 className="font-bold text-2xl text-[var(--primary)] mb-7">
+          Featured Projects
+        </h1>
+      </div>
       <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
           <ProjectCard key={project.title} project={project} />

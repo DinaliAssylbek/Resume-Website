@@ -15,7 +15,7 @@ const links = [
 
 const Footer = () => {
   return (
-    <footer className="mx-20 my-15 flex items-center justify-between gap-8">
+    <footer className="mx-28 my-15 flex items-center justify-between gap-8">
       <div>
         <h2 className="mb-3 text-2xl font-bold text-[var(--primary)]">
           Dinali Assylbek

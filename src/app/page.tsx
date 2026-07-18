@@ -8,7 +8,7 @@ import TechnicalSkills from "./components/TechnicalSkills";
 export default function Home() {
   return (
     <>
-      <main className="px-8" style={{backgroundColor: "#f8f9ff"}}>
+      <main style={{backgroundColor: "#f8f9ff"}}>
         <div className="mb-15 flex">
           <div className="flex-2">
           </div>
