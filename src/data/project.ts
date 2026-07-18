@@ -47,5 +47,13 @@ export const projects: Project[] = [
     date: "SEP 2023",
     skills: ["C", "STM32", "Embedded Systems", "PCB Design", "I²C", "Firmware Development"],
     imagePath: "/RingRise.jpeg"
+  },
+  {
+    title: "AI Style Transfer Platform",
+    description:
+      "Built an end-to-end AI application featuring a Flutter mobile frontend and Flask REST API for real-time image style transfer. Trained custom CycleGAN models on curated artist datasets to transform photos into the styles of Van Gogh, Monet, and Munch.",
+    date: "MAY 2025",
+    skills: ["Flutter", "Flask", "Python", "PyTorch", "Railway"],
+    link: "https://github.com/DinaliAssylbek/Style_Transfer_API/tree/main"
   }
 ];
