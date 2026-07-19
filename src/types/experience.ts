@@ -4,4 +4,5 @@ export type Experience = {
     from:string;
     to:string;
     info:string[];
+    links?: [string, string][];
 }

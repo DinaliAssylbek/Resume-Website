@@ -2,6 +2,7 @@ import React from 'react'
 import { experiences } from '@/data/experience'
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { Experience as ExperienceEntry } from '@/types/experience';
+import { FiExternalLink } from "react-icons/fi";
 
 
 const Experience = () => {
@@ -51,6 +52,12 @@ const ExperienceCard  = ({ entry }: { entry: ExperienceEntry }) => {
                         {point}
                     </p>
                 </div>
+            ))}
+            {entry.links && entry.links.map((link, key) => (
+                <a href={link[1]} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[var(--secondary)] hover:underline mr-3">
+                    {link[0]}
+                    <FiExternalLink className="text-xl" />
+                </a>
             ))}
         </div>
     </article>
