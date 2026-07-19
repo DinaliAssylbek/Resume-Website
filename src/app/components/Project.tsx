@@ -12,7 +12,7 @@ const Projects = () => {
   const rightColumn = projects.filter((_, index) => index % 3 === 2);
 
   return (
-    <section className="px-28 py-12" style={{backgroundColor: "#f4f6ff"}}>
+    <section id="projects" className="scroll-mt-24 px-28 py-12" style={{backgroundColor: "#f4f6ff"}}>
       <div className="flex justify-between">
         <div className="flex">
           <HiOutlineDesktopComputer className="text-3xl mr-3 text-[var(--secondary)]"/>

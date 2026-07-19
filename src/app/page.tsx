@@ -6,11 +6,13 @@ import Footer from "./components/Footer"
 import TechnicalSkills from "./components/TechnicalSkills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
     <>
       <main style={{backgroundColor: "#f8f9ff"}}>
+        <Header></Header>
         <div className="my-15 flex">
           <div className="flex-2">
             <Experience />
