@@ -7,7 +7,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 const Experience = () => {
   return (
-    <section id="experience" className='ml-page mr-15 scroll-mt-24'>
+    <section id="experience" className='scroll-mt-24'>
         <div className='flex gap-3 mb-5'>
             <MdOutlineWorkOutline className='text-3xl text-[var(--secondary)]'/>
             <h1 className='text-2xl font-bold text-[var(--primary)]'>

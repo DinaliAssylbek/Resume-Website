@@ -13,26 +13,17 @@ export default function Home() {
     <>
       <main style={{backgroundColor: "#f8f9ff"}}>
         <Header></Header>
-        <div className="my-15 flex">
-          <div className="flex-5">
-            <Experience />
-          </div>
-          <div className="flex-3">
-            <div>
-              <TechnicalSkills />
-              <Contact />
-            </div>
+        <div className="my-15 grid grid-cols-1 items-start gap-x-10 gap-y-10 px-page lg:grid-cols-[5fr_3fr]">
+          <Experience />
+          <div>
+            <TechnicalSkills />
+            <Contact />
           </div>
         </div>
         <Project></Project>
-        <div className="mb-10 flex">
-          <div className="flex-1">
-            <Education />
-          </div>
-
-          <div className="flex-1">
-            <Publications />
-          </div>
+        <div className="mb-10 grid grid-cols-1 items-start gap-x-10 px-page lg:grid-cols-2">
+          <Education />
+          <Publications />
         </div>
 
         <hr className="-mx-8 border-0 border-t border-[var(--neutral)]" />

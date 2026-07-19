@@ -4,7 +4,7 @@ import { technicalSkills } from '@/data/technicalskills';
 
 const TechnicalSkills = () => {
   return (
-    <section id="skills" className="scroll-mt-24 py-5 mr-page ml-10 border border-[var(--neutral)]/20 p-6 bg-white">
+    <section id="skills" className="scroll-mt-24 py-5 border border-[var(--neutral)]/20 p-6 bg-white">
         <div className='flex gap-4 mb-5'>
             <VscGearCompact className='text-2xl text-[var(--secondary)]'/>
             <h2 className='text-xl font-bold text-[var(--primary)]'>

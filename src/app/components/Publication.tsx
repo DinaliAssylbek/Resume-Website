@@ -5,7 +5,7 @@ import type { Publication } from "@/types/publication";
 
 const Publications = () => {
   return (
-    <section className="py-12 mr-page ml-10">
+    <section className="py-12">
       <div className="mb-12 flex items-center gap-4">
         <IoDocumentTextOutline className="text-3xl text-[var(--secondary)]" />
         <h2 className="text-xl font-bold text-[var(--primary)]">
