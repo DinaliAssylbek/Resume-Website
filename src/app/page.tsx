@@ -5,6 +5,7 @@ import Project from "./components/Project"
 import Footer from "./components/Footer"
 import TechnicalSkills from "./components/TechnicalSkills";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -15,7 +16,10 @@ export default function Home() {
             <Experience />
           </div>
           <div className="flex-1">
-            <TechnicalSkills />
+            <div>
+              <TechnicalSkills />
+              <Contact />
+            </div>
           </div>
         </div>
         <Project></Project>
