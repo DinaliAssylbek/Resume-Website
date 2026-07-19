@@ -53,8 +53,8 @@ const ExperienceCard  = ({ entry }: { entry: ExperienceEntry }) => {
                     </p>
                 </div>
             ))}
-            {entry.links && entry.links.map((link, key) => (
-                <a href={link[1]} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[var(--secondary)] hover:underline mr-3">
+            {entry.links && entry.links.map((link, index) => (
+                <a key={index} href={link[1]} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[var(--secondary)] hover:underline mr-3">
                     {link[0]}
                     <FiExternalLink className="text-xl" />
                 </a>
