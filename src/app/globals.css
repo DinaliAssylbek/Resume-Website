@@ -12,6 +12,8 @@
   --font-heading: var(--font-hanken);
   --font-body: var(--font-hanken);
   --font-label: var(--font-jetbrains);
+  /* Fluid outer padding: continuously scales Tailwind 10 → 45 with viewport */
+  --page-pad: clamp(2.5rem, 0.4rem + 9vw, 11.25rem);
 }
 
 @theme inline {
@@ -19,6 +21,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --spacing-page: var(--page-pad);
 }
 
 @media (prefers-color-scheme: dark) {

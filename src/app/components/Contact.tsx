@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-   <section id="contact" className="scroll-mt-24 py-5 mr-28 ml-10 border border-[var(--neutral)]/20 p-6 my-4" style={{backgroundColor: "#141b2e"}}>
+   <section id="contact" className="scroll-mt-24 py-5 mr-page ml-10 border border-[var(--neutral)]/20 p-6 my-4" style={{backgroundColor: "#141b2e"}}>
         <h3 className='text-white mb-2 font-bold'>
             Contact Info
         </h3>

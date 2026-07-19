@@ -12,7 +12,7 @@ const Projects = () => {
   const rightColumn = projects.filter((_, index) => index % 3 === 2);
 
   return (
-    <section id="projects" className="scroll-mt-24 px-28 py-12" style={{backgroundColor: "#f4f6ff"}}>
+    <section id="projects" className="scroll-mt-24 px-page py-12" style={{backgroundColor: "#f4f6ff"}}>
       <div className="flex justify-between">
         <div className="flex">
           <HiOutlineDesktopComputer className="text-3xl mr-3 text-[var(--secondary)]"/>
@@ -49,7 +49,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <article className="border border-[var(--neutral)]/20 shadow-sm mb-8">
       {project.imagePath && (
-        <div className="relative w-full h-64 overflow-hidden">
+        <div className="relative w-full h-50 overflow-hidden">
             <Image
                 src={project.imagePath}
                 alt={project.title}

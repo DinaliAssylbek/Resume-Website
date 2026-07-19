@@ -10,7 +10,7 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <header className='flex px-20 py-5 bg-white justify-between items-center'>
+    <header className='flex px-page py-5 bg-white justify-between items-center'>
         <h1 className='font-bold text-2xl text-[var(--primary)]'>
             Dinali Assylbek
         </h1>
