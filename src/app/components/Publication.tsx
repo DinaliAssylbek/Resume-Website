@@ -29,13 +29,13 @@ const PublicationCard = ({ publication }: { publication: Publication }) => {
     <article className="flex items-start gap-3 py-6 first:pt-0 last:pb-0">
       <TiDocumentText className="mt-0.5 shrink-0 text-3xl text-[var(--neutral)]" />
 
-      <div>
-        <p className="mb-2 text-[var(--neutral)]">{publication.citation}</p>
+      <div className="min-w-0">
+        <p className="mb-2 break-words text-[var(--neutral)]">{publication.citation}</p>
         <a
           href={publication.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[var(--secondary)] hover:underline"
+          className="break-all text-[var(--secondary)] hover:underline"
         >
           {doi}
         </a>

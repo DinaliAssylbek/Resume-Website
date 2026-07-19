@@ -24,7 +24,7 @@ export default function Home() {
           </div>
         </div>
         <Project></Project>
-        <div className="mb-10 grid grid-cols-1 items-start gap-x-10 px-page lg:grid-cols-2">
+        <div className="mb-10 grid grid-cols-1 items-start gap-x-10 px-page lg:grid-cols-2 [&>*]:min-w-0">
           <Education />
           <Publications />
         </div>
