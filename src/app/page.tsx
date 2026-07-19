@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Landing from "./components/Landing";
 import Education from "./components/Education";
 import Publications from "./components/Publication";
 import Project from "./components/Project"
@@ -12,7 +13,10 @@ export default function Home() {
   return (
     <>
       <main style={{backgroundColor: "#f8f9ff"}}>
-        <Header></Header>
+        <div className="flex min-h-dvh flex-col">
+          <Header />
+          <Landing />
+        </div>
         <div className="my-15 grid grid-cols-1 items-start gap-x-10 gap-y-10 px-page lg:grid-cols-[5fr_3fr]">
           <Experience />
           <div>
