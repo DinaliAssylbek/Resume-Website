@@ -49,7 +49,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <article className="border border-[var(--neutral)]/20 shadow-sm mb-8">
       {project.imagePath && (
-        <div className="relative w-full h-50 overflow-hidden">
+        <div className="relative w-full h-55 overflow-hidden">
             <Image
                 src={project.imagePath}
                 alt={project.title}

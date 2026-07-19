@@ -14,10 +14,10 @@ export default function Home() {
       <main style={{backgroundColor: "#f8f9ff"}}>
         <Header></Header>
         <div className="my-15 flex">
-          <div className="flex-2">
+          <div className="flex-5">
             <Experience />
           </div>
-          <div className="flex-1">
+          <div className="flex-3">
             <div>
               <TechnicalSkills />
               <Contact />
