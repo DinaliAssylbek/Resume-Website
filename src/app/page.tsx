@@ -29,7 +29,7 @@ export default function Home() {
           <Publications />
         </div>
 
-        <hr className="-mx-8 border-0 border-t border-[var(--neutral)]" />
+        <hr className="w-full border-0 border-t border-[var(--neutral)]" />
 
         <Footer />
       </main>
