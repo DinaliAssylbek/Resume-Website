@@ -16,6 +16,15 @@
   --page-pad: clamp(2.5rem, calc(-0.23rem + 11.65vw), 13.75rem);
 }
 
+.landing-grid {
+  background-color: transparent;
+  background-image:
+    linear-gradient(to right, rgb(41 147 192 / 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(41 147 192 / 0.18) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: center;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
